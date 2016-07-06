@@ -4,44 +4,44 @@ angular.module('starter.services', [])
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var chats = [{
+  var lenders = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
+    name: 'Equity',
+    lastText: '18%',
+    face: 'img/equity.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
+    name: 'Barclays',
+    lastText: '21%',
+    face: 'img/barclays.jpg'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
+    name: 'Sidian Bank',
+    lastText: '16%',
+    face: 'img/sidian.jpg'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
+    name: 'KCB',
+    lastText: '17.5%',
+    face: 'img/kcb.png'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
+    name: 'Chase Bank',
+    lastText: '18%',
+    face: 'img/chase.png'
   }];
 
   return {
     all: function() {
-      return chats;
+      return lenders;
     },
     remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
+      lenders.splice(lenders.indexOf(chat), 1);
     },
     get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
+      for (var i = 0; i < lenders.length; i++) {
+        if (lenders[i].id === parseInt(chatId)) {
+          return lenders[i];
         }
       }
       return null;
